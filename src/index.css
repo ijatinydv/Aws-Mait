@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #F5F5F5;
+  overflow-x: hidden;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF9900;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6890a;
+}
+
+/* Particle animation keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.particle {
+  animation: float 6s ease-in-out infinite;
+}
+
+.particle:nth-child(2n) {
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3n) {
+  animation-delay: 4s;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Fix for text selection and cursor issues */
+.text-content {
+  pointer-events: auto;
+  user-select: text;
+  position: relative;
+  z-index: 100;
+}
+
+/* Ensure particles don't interfere with text */
+.particle {
+  pointer-events: none;
+  user-select: none;
+}
