@@ -21,9 +21,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
-    { name: 'AWS Services', id: 'aws-services' },
     { name: 'Journey', id: 'student-journey' },
-    { name: 'MAIT', id: 'mait' },
     { name: 'Contact', id: 'contact' }
   ];
 
@@ -44,7 +42,7 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-4">
               <img 
-                src="/src/assets/aws1-logo.png" 
+                src="/src/assets/aws-logo.svg" 
                 alt="AWS Logo" 
                 className="h-10"
               />
