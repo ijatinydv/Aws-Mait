@@ -76,9 +76,9 @@ const AboutMAITSection = () => {
             <div>
               <div className="flex items-center justify-center mb-6 ">
                 <img 
-                  src="/src/assets/mait-logo.png" 
+                  src="https://ik.imagekit.io/raosahab/mait-logo.png?updatedAt=1759542732932" 
                   alt="MAIT Logo" 
-                  className="w-16 h-16 mr-4"
+                  className="w-20 h-20 mr-4"
                 />
                 <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
                   Maharaja Agrasen
@@ -128,7 +128,7 @@ const AboutMAITSection = () => {
             {/* Campus Image */}
             <div className="mt-16 max-w-4xl mx-auto">
               <img 
-                src="/src/assets/mait-campus.jpg" 
+                src="https://ik.imagekit.io/raosahab/mait-campus.jpg?updatedAt=1759542750435" 
                 alt="MAIT Campus" 
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
               />

@@ -72,7 +72,8 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center mb-4">
-              <FaAws className="text-[#FF9900] mr-2" size={32} />
+              <img src="https://ik.imagekit.io/raosahab/aws-logo.svg?updatedAt=1759542812160" alt="aws logo" className='h-10 w-10 mr-2'/>
+              {/* <FaAws className="text-[#FF9900] mr-2" size={32} /> */}
               <h3 className="text-2xl font-bold text-[#F5F5F5]">
                 AWS × MAIT
               </h3>

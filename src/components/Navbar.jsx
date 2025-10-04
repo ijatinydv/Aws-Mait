@@ -42,13 +42,13 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-4">
               <img 
-                src="/src/assets/aws-logo.svg" 
+                src="https://ik.imagekit.io/raosahab/aws-logo.svg?updatedAt=1759542812160" 
                 alt="AWS Logo" 
                 className="h-10"
               />
               <span className="text-gray-500 text-xl">|</span>
               <img 
-                src="/src/assets/mait-logo.png" 
+                src="https://ik.imagekit.io/raosahab/mait-logo.png?updatedAt=1759542732932" 
                 alt="MAIT Logo" 
                 className="h-16"
               />
