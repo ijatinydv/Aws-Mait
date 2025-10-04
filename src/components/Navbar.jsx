@@ -40,17 +40,17 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             onClick={() => scrollToSection('home')}
           >
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <img 
                 src="https://ik.imagekit.io/raosahab/aws-logo.svg?updatedAt=1759542812160" 
                 alt="AWS Logo" 
-                className="h-10"
+                className="h-8 sm:h-10"
               />
-              <span className="text-gray-500 text-xl">|</span>
+              <span className="text-gray-500 text-lg sm:text-xl">|</span>
               <img 
                 src="https://ik.imagekit.io/raosahab/mait-logo.png?updatedAt=1759542732932" 
                 alt="MAIT Logo" 
-                className="h-16"
+                className="h-12 sm:h-16"
               />
             </div>
           </motion.div>

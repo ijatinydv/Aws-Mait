@@ -100,11 +100,11 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 px-2">
             <span className="text-[#F5F5F5]">About </span>
             <span className="text-[#FF9900]">Our Chapter</span>
           </h2>
-          <p className="text-lg text-[#A9A9A9] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-[#A9A9A9] max-w-3xl mx-auto leading-relaxed px-2">
             Bridging the gap between academic learning and industry requirements through 
             comprehensive cloud computing education and practical experience.
           </p>
@@ -119,13 +119,13 @@ const AboutSection = () => {
           viewport={{ once: true, margin: '-100px' }}
         >
           <motion.div className="text-center mb-12" variants={itemVariants}>
-            <div className="flex items-center justify-center mb-4">
-              <FaAws className="text-[#FF9900] mr-3" size={48} />
-              <h3 className="text-3xl sm:text-4xl font-bold text-[#F5F5F5]">
+            <div className="flex flex-col sm:flex-row items-center justify-center mb-4 px-2">
+              <FaAws className="text-[#FF9900] mb-2 sm:mb-0 sm:mr-3" size={40} />
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F5F5F5]">
                 Amazon Web Services
               </h3>
             </div>
-            <p className="text-lg text-[#A9A9A9] max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-[#A9A9A9] max-w-2xl mx-auto px-2">
               Learn the most comprehensive and broadly adopted cloud platform, 
               offering over 200 fully featured services from data centers globally.
             </p>
@@ -156,11 +156,11 @@ const AboutSection = () => {
           viewport={{ once: true, margin: '-100px' }}
         >
           <motion.div className="text-center mb-12" variants={itemVariants}>
-            <h3 className="text-3xl sm:text-4xl font-bold mb-6">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 px-2">
               <span className="text-[#F5F5F5]">Why Join </span>
               <span className="text-[#B3282D]">Our Chapter?</span>
             </h3>
-            <p className="text-lg text-[#A9A9A9] max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-[#A9A9A9] max-w-2xl mx-auto px-2">
               Unlock your potential with exclusive benefits and opportunities 
               that our chapter provides to its members.
             </p>

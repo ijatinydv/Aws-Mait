@@ -106,13 +106,13 @@ const ContactForm = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex items-center justify-center mb-4">
-            <FaRocket className="text-[#FF9900] mr-3" size={40} />
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#F5F5F5]">
+          <div className="flex items-center justify-center mb-4 px-2">
+            <FaRocket className="text-[#FF9900] mr-2 sm:mr-3 flex-shrink-0" size={32} />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F5F5]">
               Launch Your Cloud Journey
             </h2>
           </div>
-          <p className="text-lg text-[#A9A9A9] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-[#A9A9A9] max-w-2xl mx-auto leading-relaxed px-2">
             Ready to join the AWS Academy MAIT Chapter? Fill out the form below and 
             take the first step towards mastering cloud computing.
           </p>
@@ -290,23 +290,23 @@ const ContactForm = () => {
 
         {/* Additional Info */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mt-12 px-2"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="text-center p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
-            <div className="text-[#FF9900] text-2xl font-bold mb-2">No Prerequisites</div>
-            <p className="text-[#A9A9A9]">Open to students from all branches and years</p>
+          <div className="text-center p-4 sm:p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
+            <div className="text-[#FF9900] text-xl sm:text-2xl font-bold mb-2">No Prerequisites</div>
+            <p className="text-sm sm:text-base text-[#A9A9A9]">Open to students from all branches and years</p>
           </div>
-          <div className="text-center p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
-            <div className="text-[#B3282D] text-2xl font-bold mb-2">Free Membership</div>
-            <p className="text-[#A9A9A9]">No membership fees or hidden charges</p>
+          <div className="text-center p-4 sm:p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
+            <div className="text-[#B3282D] text-xl sm:text-2xl font-bold mb-2">Free Membership</div>
+            <p className="text-sm sm:text-base text-[#A9A9A9]">No membership fees or hidden charges</p>
           </div>
-          <div className="text-center p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
-            <div className="text-[#FF9900] text-2xl font-bold mb-2">Industry Ready</div>
-            <p className="text-[#A9A9A9]">Learn skills that employers are looking for</p>
+          <div className="text-center p-4 sm:p-6 bg-[#2a2a3e]/50 rounded-xl border border-gray-700">
+            <div className="text-[#FF9900] text-xl sm:text-2xl font-bold mb-2">Industry Ready</div>
+            <p className="text-sm sm:text-base text-[#A9A9A9]">Learn skills that employers are looking for</p>
           </div>
         </motion.div>
       </div>

@@ -67,7 +67,7 @@ const HeroSection = () => {
         >
           {/* Main Heading */}
           <motion.h1 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight px-2"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -81,7 +81,7 @@ const HeroSection = () => {
 
           {/* Subheading */}
           <motion.p 
-            className="text-lg sm:text-xl md:text-2xl text-[#A9A9A9] mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#A9A9A9] mb-8 max-w-3xl mx-auto leading-relaxed px-2"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -91,7 +91,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <motion.p 
-            className="text-base sm:text-lg text-[#A9A9A9] mb-12 max-w-2xl mx-auto"
+            className="text-sm sm:text-base md:text-lg text-[#A9A9A9] mb-12 max-w-2xl mx-auto px-2"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -102,13 +102,13 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
           >
             <motion.button
-              className="bg-[#FF9900] hover:bg-[#e6890a] text-white px-8 py-3 rounded-lg font-semibold text-lg flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-[#FF9900]/25"
+              className="bg-[#FF9900] hover:bg-[#e6890a] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold text-base sm:text-lg flex items-center gap-2 transition-all duration-300 shadow-lg hover:shadow-[#FF9900]/25 w-full sm:w-auto"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
@@ -118,7 +118,7 @@ const HeroSection = () => {
             </motion.button>
             
             <motion.button
-              className="border-2 border-[#B3282D] text-[#B3282D] hover:bg-[#B3282D] hover:text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300"
+              className="border-2 border-[#B3282D] text-[#B3282D] hover:bg-[#B3282D] hover:text-white px-6 sm:px-8 py-3 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 w-full sm:w-auto"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
@@ -129,22 +129,22 @@ const HeroSection = () => {
 
           {/* Stats or Quick Info */}
           <motion.div 
-            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto relative z-20"
+            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto relative z-20 px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#FF9900] mb-2 relative z-30 text-content">500+</div>
-              <div className="text-[#A9A9A9] relative z-30 text-content">Active Members</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#FF9900] mb-2 relative z-30 text-content">500+</div>
+              <div className="text-sm sm:text-base text-[#A9A9A9] relative z-30 text-content">Active Members</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#B3282D] mb-2 relative z-30 text-content">50+</div>
-              <div className="text-[#A9A9A9] relative z-30 text-content">Projects Completed</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#B3282D] mb-2 relative z-30 text-content">50+</div>
+              <div className="text-sm sm:text-base text-[#A9A9A9] relative z-30 text-content">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-[#FF9900] mb-2 relative z-30 text-content">15+</div>
-              <div className="text-[#A9A9A9] relative z-30 text-content">AWS Certifications</div>
+              <div className="text-2xl sm:text-3xl font-bold text-[#FF9900] mb-2 relative z-30 text-content">15+</div>
+              <div className="text-sm sm:text-base text-[#A9A9A9] relative z-30 text-content">AWS Certifications</div>
             </div>
           </motion.div>
         </motion.div>

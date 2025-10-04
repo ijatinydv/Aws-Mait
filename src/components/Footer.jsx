@@ -72,9 +72,9 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center mb-4">
-              <img src="https://ik.imagekit.io/raosahab/aws-logo.svg?updatedAt=1759542812160" alt="aws logo" className='h-10 w-10 mr-2'/>
+              <img src="https://ik.imagekit.io/raosahab/aws-logo.svg?updatedAt=1759542812160" alt="aws logo" className='h-8 w-8 sm:h-10 sm:w-10 mr-2'/>
               {/* <FaAws className="text-[#FF9900] mr-2" size={32} /> */}
-              <h3 className="text-2xl font-bold text-[#F5F5F5]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#F5F5F5]">
                 AWS × MAIT
               </h3>
             </div>
@@ -219,9 +219,9 @@ const Footer = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2">
             <motion.div
-              className="flex items-center text-[#A9A9A9] text-sm"
+              className="flex items-center text-[#A9A9A9] text-xs sm:text-sm text-center"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -231,7 +231,7 @@ const Footer = () => {
             </motion.div>
             
             <motion.div
-              className="flex items-center text-[#A9A9A9] text-sm mt-2 md:mt-0"
+              className="flex items-center text-[#A9A9A9] text-xs sm:text-sm mt-2 md:mt-0"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -101,14 +101,14 @@ const AboutAWSSection = () => {
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+        <div className="text-center mb-16 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Powered by the
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
               {" "}Cloud
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Explore the comprehensive AWS ecosystem that powers modern applications. 
             From compute and storage to security and monitoring - master the tools that drive innovation.
           </p>
@@ -117,30 +117,30 @@ const AboutAWSSection = () => {
         {/* AWS Services Grid */}
         <div 
           ref={gridRef}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12"
         >
           {awsServices.map((service, index) => {
             const IconComponent = service.icon;
             return (
               <div
                 key={index}
-                className="logo-item flex flex-col items-center justify-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 cursor-pointer group"
+                className="logo-item flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 cursor-pointer group"
               >
                 <IconComponent 
-                  className={`text-6xl md:text-7xl ${service.color} mb-4 group-hover:scale-110 transition-transform duration-300`} 
+                  className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl ${service.color} mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`} 
                 />
-                <span className="text-white font-semibold text-lg md:text-xl text-center">
+                <span className="text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl text-center">
                   {service.name}
                 </span>
-                <div className="w-12 h-1 bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="w-8 sm:w-10 md:w-12 h-1 bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full mt-2 sm:mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             );
           })}
         </div>
 
         {/* Additional Content */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <div className="text-center mt-16 px-2">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
             Join thousands of students already mastering cloud technologies through hands-on experience 
             with industry-standard AWS services.
           </p>
