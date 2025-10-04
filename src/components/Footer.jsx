@@ -7,38 +7,27 @@ import {
   FaInstagram, 
   FaEnvelope,
   FaAws,
-  FaHeart
+  FaHeart,
+  FaPhoneAlt 
 } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
     {
-      icon: FaGithub,
-      href: 'https://github.com/aws-academy-mait',
-      label: 'GitHub',
-      color: 'hover:text-[#F5F5F5]'
-    },
-    {
-      icon: FaLinkedin,
-      href: 'https://linkedin.com/company/aws-academy-mait',
-      label: 'LinkedIn',
-      color: 'hover:text-[#0077B5]'
-    },
-    {
-      icon: FaTwitter,
-      href: 'https://twitter.com/aws_academy_mait',
-      label: 'Twitter',
-      color: 'hover:text-[#1DA1F2]'
+      icon: FaPhoneAlt,
+      href: 'tel:+91 9910407970',
+      label: 'Phone',
+      color: 'hover:text-[#FF9900]'
     },
     {
       icon: FaInstagram,
-      href: 'https://instagram.com/aws.academy.mait',
+      href: 'https://www.instagram.com/aws.academy_mates/',
       label: 'Instagram',
       color: 'hover:text-[#E4405F]'
     },
     {
       icon: FaEnvelope,
-      href: 'mailto:aws.academy@mait.ac.in',
+      href: 'mailto:awsacademymait@gmail.com',
       label: 'Email',
       color: 'hover:text-[#FF9900]'
     }
@@ -193,7 +182,7 @@ const Footer = () => {
                 <div>
                   <p className="text-[#A9A9A9] text-sm">Email</p>
                   <a href="mailto:aws.academy@mait.ac.in" className="text-[#F5F5F5] hover:text-[#FF9900] transition-colors duration-300">
-                    aws.academy@mait.ac.in
+                    awsacademymait@gmail.com
                   </a>
                 </div>
               </motion.div>
@@ -262,7 +251,7 @@ const Footer = () => {
               >
                 <FaHeart size={14} />
               </motion.div>
-              <span>by AWS Academy MAIT Students</span>
+              <span>by Jatin Kumar</span>
             </motion.div>
           </div>
         </div>

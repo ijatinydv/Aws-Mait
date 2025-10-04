@@ -148,64 +148,6 @@ const AboutSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* MAIT Section */}
-        <motion.div
-          className="mb-20"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* MAIT Info */}
-            <motion.div variants={itemVariants}>
-              <div className="flex items-center mb-6">
-                <FaBuilding className="text-[#B3282D] mr-3" size={40} />
-                <h3 className="text-3xl sm:text-4xl font-bold text-[#F5F5F5]">
-                  MAIT College
-                </h3>
-              </div>
-              <p className="text-lg text-[#A9A9A9] mb-6 leading-relaxed">
-                Maharaja Agrasen Institute of Technology (MAIT) is a premier engineering 
-                institution affiliated to Guru Gobind Singh Indraprastha University, 
-                known for its excellence in technical education and research.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-[#B3282D] rounded-full mr-3"></div>
-                  <span className="text-[#F5F5F5]">Established in 1999</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-[#B3282D] rounded-full mr-3"></div>
-                  <span className="text-[#F5F5F5]">NAAC 'A+' Accredited</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-[#B3282D] rounded-full mr-3"></div>
-                  <span className="text-[#F5F5F5]">5000+ Students</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-[#B3282D] rounded-full mr-3"></div>
-                  <span className="text-[#F5F5F5]">Industry-Academic Partnerships</span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Campus Image */}
-            <motion.div 
-              className="relative"
-              variants={itemVariants}
-            >
-              <div className="bg-gradient-to-br from-[#2a2a3e] to-[#3a3a4e] rounded-xl p-2 border border-gray-700">
-                <img 
-                  src="/src/assets/mait-campus.jpg" 
-                  alt="MAIT Campus" 
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
-
         {/* Chapter Benefits */}
         <motion.div
           variants={containerVariants}
